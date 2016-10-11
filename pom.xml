@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.cmu.lti.oaqa.bio</groupId>
   <artifactId>uts-api</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3-SNAPSHOT</version>
   <name>UMLS Terminology Services API 2.0</name>
   <description>Java source files imported From WSDL files according to https://uts.nlm.nih.gov/home.html#apidocumentation</description>
   <url>https://github.com/ziy/uts-api</url>
@@ -18,7 +18,7 @@
     <url>git@github.com:ziy/uts-api.git</url>
     <connection>scm:git:git@github.com:ziy/uts-api.git</connection>
     <developerConnection>scm:git:git@github.com:ziy/uts-api.git</developerConnection>
-    <tag>uts-api-0.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
