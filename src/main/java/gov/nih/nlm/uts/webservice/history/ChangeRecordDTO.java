@@ -37,13 +37,13 @@ import javax.xml.bind.annotation.XmlType;
     "version"
 })
 @XmlSeeAlso({
+    TermStringDeathDTO.class,
     TermMergeDTO.class,
     TermDeathDTO.class,
-    AtomMovementDTO.class,
-    SourceAtomChangeDTO.class,
     ConceptMergeDTO.class,
+    AtomMovementDTO.class,
     ConceptDeathDTO.class,
-    TermStringDeathDTO.class
+    SourceAtomChangeDTO.class
 })
 public class ChangeRecordDTO {
 

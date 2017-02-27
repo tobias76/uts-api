@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://webservice.uts.umls.nlm.nih.gov/}atomContentViewMemberDTO" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://webservice.uts.umls.nlm.nih.gov/}contentViewDTO" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 public class GetAtomContentViewMembershipsResponse {
 
     @XmlElement(name = "return")
-    protected List<AtomContentViewMemberDTO> _return;
+    protected List<ContentViewDTO> _return;
 
     /**
      * Gets the value of the return property.
@@ -55,13 +55,13 @@ public class GetAtomContentViewMembershipsResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link AtomContentViewMemberDTO }
+     * {@link ContentViewDTO }
      * 
      * 
      */
-    public List<AtomContentViewMemberDTO> getReturn() {
+    public List<ContentViewDTO> getReturn() {
         if (_return == null) {
-            _return = new ArrayList<AtomContentViewMemberDTO>();
+            _return = new ArrayList<ContentViewDTO>();
         }
         return this._return;
     }

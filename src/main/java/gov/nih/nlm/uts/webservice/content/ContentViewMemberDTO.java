@@ -33,10 +33,10 @@ import javax.xml.bind.annotation.XmlType;
     "contentViewHandle"
 })
 @XmlSeeAlso({
-    AtomContentViewMemberDTO.class,
     RelationContentViewMemberDTO.class,
+    SourceConceptContentViewMemberDTO.class,
     ConceptContentViewMemberDTO.class,
-    SourceConceptContentViewMemberDTO.class
+    AtomContentViewMemberDTO.class
 })
 public class ContentViewMemberDTO
     extends MetathesaurusDataDTO

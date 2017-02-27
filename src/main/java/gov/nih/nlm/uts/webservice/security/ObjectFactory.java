@@ -24,13 +24,15 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _GetProxyGrantTicketWithApiKey_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyGrantTicketWithApiKey");
     private final static QName _ValidateProxyTicketResponse_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "validateProxyTicketResponse");
-    private final static QName _GetProxyGrantTicketResponse_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyGrantTicketResponse");
-    private final static QName _GetProxyTicket_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyTicket");
-    private final static QName _GetProxyTicketResponse_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyTicketResponse");
-    private final static QName _ValidateProxyTicket_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "validateProxyTicket");
     private final static QName _GetProxyGrantTicket_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyGrantTicket");
+    private final static QName _GetProxyTicketResponse_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyTicketResponse");
     private final static QName _UtsFault_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "UtsFault");
+    private final static QName _ValidateProxyTicket_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "validateProxyTicket");
+    private final static QName _GetProxyGrantTicketResponse_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyGrantTicketResponse");
+    private final static QName _GetProxyGrantTicketWithApiKeyResponse_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyGrantTicketWithApiKeyResponse");
+    private final static QName _GetProxyTicket_QNAME = new QName("http://webservice.uts.umls.nlm.nih.gov/", "getProxyTicket");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: gov.nih.nlm.uts.webservice.security
@@ -40,35 +42,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ValidateProxyTicketResponse }
+     * Create an instance of {@link UtsFault }
      * 
      */
-    public ValidateProxyTicketResponse createValidateProxyTicketResponse() {
-        return new ValidateProxyTicketResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetProxyGrantTicketResponse }
-     * 
-     */
-    public GetProxyGrantTicketResponse createGetProxyGrantTicketResponse() {
-        return new GetProxyGrantTicketResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetProxyTicketResponse }
-     * 
-     */
-    public GetProxyTicketResponse createGetProxyTicketResponse() {
-        return new GetProxyTicketResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetProxyTicket }
-     * 
-     */
-    public GetProxyTicket createGetProxyTicket() {
-        return new GetProxyTicket();
+    public UtsFault createUtsFault() {
+        return new UtsFault();
     }
 
     /**
@@ -80,6 +58,38 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetProxyTicket }
+     * 
+     */
+    public GetProxyTicket createGetProxyTicket() {
+        return new GetProxyTicket();
+    }
+
+    /**
+     * Create an instance of {@link GetProxyGrantTicketResponse }
+     * 
+     */
+    public GetProxyGrantTicketResponse createGetProxyGrantTicketResponse() {
+        return new GetProxyGrantTicketResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetProxyGrantTicketWithApiKeyResponse }
+     * 
+     */
+    public GetProxyGrantTicketWithApiKeyResponse createGetProxyGrantTicketWithApiKeyResponse() {
+        return new GetProxyGrantTicketWithApiKeyResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetProxyGrantTicketWithApiKey }
+     * 
+     */
+    public GetProxyGrantTicketWithApiKey createGetProxyGrantTicketWithApiKey() {
+        return new GetProxyGrantTicketWithApiKey();
+    }
+
+    /**
      * Create an instance of {@link GetProxyGrantTicket }
      * 
      */
@@ -88,11 +98,28 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UtsFault }
+     * Create an instance of {@link GetProxyTicketResponse }
      * 
      */
-    public UtsFault createUtsFault() {
-        return new UtsFault();
+    public GetProxyTicketResponse createGetProxyTicketResponse() {
+        return new GetProxyTicketResponse();
+    }
+
+    /**
+     * Create an instance of {@link ValidateProxyTicketResponse }
+     * 
+     */
+    public ValidateProxyTicketResponse createValidateProxyTicketResponse() {
+        return new ValidateProxyTicketResponse();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyGrantTicketWithApiKey }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyGrantTicketWithApiKey")
+    public JAXBElement<GetProxyGrantTicketWithApiKey> createGetProxyGrantTicketWithApiKey(GetProxyGrantTicketWithApiKey value) {
+        return new JAXBElement<GetProxyGrantTicketWithApiKey>(_GetProxyGrantTicketWithApiKey_QNAME, GetProxyGrantTicketWithApiKey.class, null, value);
     }
 
     /**
@@ -105,21 +132,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyGrantTicketResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyGrantTicket }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyGrantTicketResponse")
-    public JAXBElement<GetProxyGrantTicketResponse> createGetProxyGrantTicketResponse(GetProxyGrantTicketResponse value) {
-        return new JAXBElement<GetProxyGrantTicketResponse>(_GetProxyGrantTicketResponse_QNAME, GetProxyGrantTicketResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyTicket }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyTicket")
-    public JAXBElement<GetProxyTicket> createGetProxyTicket(GetProxyTicket value) {
-        return new JAXBElement<GetProxyTicket>(_GetProxyTicket_QNAME, GetProxyTicket.class, null, value);
+    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyGrantTicket")
+    public JAXBElement<GetProxyGrantTicket> createGetProxyGrantTicket(GetProxyGrantTicket value) {
+        return new JAXBElement<GetProxyGrantTicket>(_GetProxyGrantTicket_QNAME, GetProxyGrantTicket.class, null, value);
     }
 
     /**
@@ -132,6 +150,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UtsFault }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "UtsFault")
+    public JAXBElement<UtsFault> createUtsFault(UtsFault value) {
+        return new JAXBElement<UtsFault>(_UtsFault_QNAME, UtsFault.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ValidateProxyTicket }{@code >}}
      * 
      */
@@ -141,21 +168,30 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyGrantTicket }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyGrantTicketResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyGrantTicket")
-    public JAXBElement<GetProxyGrantTicket> createGetProxyGrantTicket(GetProxyGrantTicket value) {
-        return new JAXBElement<GetProxyGrantTicket>(_GetProxyGrantTicket_QNAME, GetProxyGrantTicket.class, null, value);
+    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyGrantTicketResponse")
+    public JAXBElement<GetProxyGrantTicketResponse> createGetProxyGrantTicketResponse(GetProxyGrantTicketResponse value) {
+        return new JAXBElement<GetProxyGrantTicketResponse>(_GetProxyGrantTicketResponse_QNAME, GetProxyGrantTicketResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UtsFault }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyGrantTicketWithApiKeyResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "UtsFault")
-    public JAXBElement<UtsFault> createUtsFault(UtsFault value) {
-        return new JAXBElement<UtsFault>(_UtsFault_QNAME, UtsFault.class, null, value);
+    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyGrantTicketWithApiKeyResponse")
+    public JAXBElement<GetProxyGrantTicketWithApiKeyResponse> createGetProxyGrantTicketWithApiKeyResponse(GetProxyGrantTicketWithApiKeyResponse value) {
+        return new JAXBElement<GetProxyGrantTicketWithApiKeyResponse>(_GetProxyGrantTicketWithApiKeyResponse_QNAME, GetProxyGrantTicketWithApiKeyResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetProxyTicket }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.uts.umls.nlm.nih.gov/", name = "getProxyTicket")
+    public JAXBElement<GetProxyTicket> createGetProxyTicket(GetProxyTicket value) {
+        return new JAXBElement<GetProxyTicket>(_GetProxyTicket_QNAME, GetProxyTicket.class, null, value);
     }
 
 }

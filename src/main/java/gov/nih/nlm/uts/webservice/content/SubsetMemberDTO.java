@@ -33,8 +33,8 @@ import javax.xml.bind.annotation.XmlType;
     "subsetHandle"
 })
 @XmlSeeAlso({
-    SourceConceptSubsetMemberDTO.class,
     RelationSubsetMemberDTO.class,
+    SourceConceptSubsetMemberDTO.class,
     AtomSubsetMemberDTO.class
 })
 public class SubsetMemberDTO

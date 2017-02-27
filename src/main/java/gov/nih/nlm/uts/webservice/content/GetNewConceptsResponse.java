@@ -10,16 +10,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getConceptContentViewMembershipsResponse complex type.
+ * <p>Java class for getNewConceptsResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getConceptContentViewMembershipsResponse">
+ * &lt;complexType name="getNewConceptsResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://webservice.uts.umls.nlm.nih.gov/}contentViewDTO" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://webservice.uts.umls.nlm.nih.gov/}conceptDTO" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,13 +29,13 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getConceptContentViewMembershipsResponse", propOrder = {
+@XmlType(name = "getNewConceptsResponse", propOrder = {
     "_return"
 })
-public class GetConceptContentViewMembershipsResponse {
+public class GetNewConceptsResponse {
 
     @XmlElement(name = "return")
-    protected List<ContentViewDTO> _return;
+    protected List<ConceptDTO> _return;
 
     /**
      * Gets the value of the return property.
@@ -55,13 +55,13 @@ public class GetConceptContentViewMembershipsResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link ContentViewDTO }
+     * {@link ConceptDTO }
      * 
      * 
      */
-    public List<ContentViewDTO> getReturn() {
+    public List<ConceptDTO> getReturn() {
         if (_return == null) {
-            _return = new ArrayList<ContentViewDTO>();
+            _return = new ArrayList<ConceptDTO>();
         }
         return this._return;
     }

@@ -22,10 +22,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *     &lt;extension base="{http://webservice.uts.umls.nlm.nih.gov/}atomClusterDTO">
  *       &lt;sequence>
  *         &lt;element name="atomCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="atomRelationCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="attributeCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="cvMemberCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="dateAdded" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *         &lt;element name="definitionsCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="majorRevisionDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="relationCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="semanticTypes" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
@@ -41,10 +41,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "conceptDTO", propOrder = {
     "atomCount",
-    "atomRelationCount",
     "attributeCount",
     "cvMemberCount",
     "dateAdded",
+    "definitionsCount",
     "majorRevisionDate",
     "relationCount",
     "semanticTypes",
@@ -55,11 +55,11 @@ public class ConceptDTO
 {
 
     protected int atomCount;
-    protected int atomRelationCount;
     protected int attributeCount;
     protected int cvMemberCount;
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar dateAdded;
+    protected int definitionsCount;
     @XmlSchemaType(name = "dateTime")
     protected XMLGregorianCalendar majorRevisionDate;
     protected int relationCount;
@@ -81,22 +81,6 @@ public class ConceptDTO
      */
     public void setAtomCount(int value) {
         this.atomCount = value;
-    }
-
-    /**
-     * Gets the value of the atomRelationCount property.
-     * 
-     */
-    public int getAtomRelationCount() {
-        return atomRelationCount;
-    }
-
-    /**
-     * Sets the value of the atomRelationCount property.
-     * 
-     */
-    public void setAtomRelationCount(int value) {
-        this.atomRelationCount = value;
     }
 
     /**
@@ -153,6 +137,22 @@ public class ConceptDTO
      */
     public void setDateAdded(XMLGregorianCalendar value) {
         this.dateAdded = value;
+    }
+
+    /**
+     * Gets the value of the definitionsCount property.
+     * 
+     */
+    public int getDefinitionsCount() {
+        return definitionsCount;
+    }
+
+    /**
+     * Sets the value of the definitionsCount property.
+     * 
+     */
+    public void setDefinitionsCount(int value) {
+        this.definitionsCount = value;
     }
 
     /**

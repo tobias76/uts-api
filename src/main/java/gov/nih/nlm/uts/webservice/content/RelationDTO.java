@@ -21,10 +21,13 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="assertedDirection" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="attributeCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="cvMemberCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="fromSType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="groupId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="relatedCUI" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="relationCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="relationLabel" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="subsetMemberCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="toSType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/extension>
  *   &lt;/complexContent>
@@ -39,14 +42,17 @@ import javax.xml.bind.annotation.XmlType;
     "assertedDirection",
     "attributeCount",
     "cvMemberCount",
+    "fromSType",
     "groupId",
+    "relatedCUI",
     "relationCount",
     "relationLabel",
-    "subsetMemberCount"
+    "subsetMemberCount",
+    "toSType"
 })
 @XmlSeeAlso({
-    AtomClusterRelationDTO.class,
     ConceptRelationDTO.class,
+    AtomClusterRelationDTO.class,
     AtomRelationDTO.class
 })
 public class RelationDTO
@@ -57,10 +63,13 @@ public class RelationDTO
     protected boolean assertedDirection;
     protected int attributeCount;
     protected int cvMemberCount;
+    protected String fromSType;
     protected String groupId;
+    protected String relatedCUI;
     protected int relationCount;
     protected String relationLabel;
     protected int subsetMemberCount;
+    protected String toSType;
 
     /**
      * Gets the value of the additionalRelationLabel property.
@@ -135,6 +144,30 @@ public class RelationDTO
     }
 
     /**
+     * Gets the value of the fromSType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getFromSType() {
+        return fromSType;
+    }
+
+    /**
+     * Sets the value of the fromSType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setFromSType(String value) {
+        this.fromSType = value;
+    }
+
+    /**
      * Gets the value of the groupId property.
      * 
      * @return
@@ -156,6 +189,30 @@ public class RelationDTO
      */
     public void setGroupId(String value) {
         this.groupId = value;
+    }
+
+    /**
+     * Gets the value of the relatedCUI property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getRelatedCUI() {
+        return relatedCUI;
+    }
+
+    /**
+     * Sets the value of the relatedCUI property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setRelatedCUI(String value) {
+        this.relatedCUI = value;
     }
 
     /**
@@ -212,6 +269,30 @@ public class RelationDTO
      */
     public void setSubsetMemberCount(int value) {
         this.subsetMemberCount = value;
+    }
+
+    /**
+     * Gets the value of the toSType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getToSType() {
+        return toSType;
+    }
+
+    /**
+     * Sets the value of the toSType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setToSType(String value) {
+        this.toSType = value;
     }
 
 }

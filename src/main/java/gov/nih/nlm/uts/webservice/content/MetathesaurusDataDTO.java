@@ -33,8 +33,8 @@ import javax.xml.bind.annotation.XmlType;
     "ui"
 })
 @XmlSeeAlso({
-    AtomClusterDTO.class,
     ContentViewDTO.class,
+    AtomClusterDTO.class,
     ContentViewMemberDTO.class,
     SourceDataDTO.class
 })

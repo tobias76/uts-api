@@ -39,17 +39,17 @@ import javax.xml.bind.annotation.XmlType;
     "sourceUi"
 })
 @XmlSeeAlso({
-    DefinitionDTO.class,
-    SubsetDTO.class,
-    AttributeDTO.class,
-    ValueSetDTO.class,
-    MappingDTO.class,
-    TreePositionDTO.class,
     MapObjectDTO.class,
     MapsetDTO.class,
-    AtomDTO.class,
+    SubsetDTO.class,
+    ValueSetDTO.class,
+    AttributeDTO.class,
+    TreePositionDTO.class,
+    SubsetMemberDTO.class,
     RelationDTO.class,
-    SubsetMemberDTO.class
+    DefinitionDTO.class,
+    AtomDTO.class,
+    MappingDTO.class
 })
 public class SourceDataDTO
     extends MetathesaurusDataDTO

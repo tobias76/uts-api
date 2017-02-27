@@ -35,12 +35,12 @@ import javax.xml.bind.annotation.XmlType;
     "version"
 })
 @XmlSeeAlso({
+    CompleteSourceDefinitionEntryDTO.class,
+    ExplicitListDefinitionEntryDTO.class,
     RelationDefinitionEntryDTO.class,
     AttributeDefinitionEntryDTO.class,
     CompleteValueSetDefinitionEntryDTO.class,
-    ExplicitListDefinitionEntryDTO.class,
-    ExplicitListDetailedDefinitionEntryDTO.class,
-    CompleteSourceDefinitionEntryDTO.class
+    ExplicitListDetailedDefinitionEntryDTO.class
 })
 public class ValueSetDefinitionDTO
     extends DataDTO

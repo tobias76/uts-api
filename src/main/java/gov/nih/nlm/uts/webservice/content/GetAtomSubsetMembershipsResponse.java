@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://webservice.uts.umls.nlm.nih.gov/}atomSubsetMemberDTO" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://webservice.uts.umls.nlm.nih.gov/}subsetDTO" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 public class GetAtomSubsetMembershipsResponse {
 
     @XmlElement(name = "return")
-    protected List<AtomSubsetMemberDTO> _return;
+    protected List<SubsetDTO> _return;
 
     /**
      * Gets the value of the return property.
@@ -55,13 +55,13 @@ public class GetAtomSubsetMembershipsResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link AtomSubsetMemberDTO }
+     * {@link SubsetDTO }
      * 
      * 
      */
-    public List<AtomSubsetMemberDTO> getReturn() {
+    public List<SubsetDTO> getReturn() {
         if (_return == null) {
-            _return = new ArrayList<AtomSubsetMemberDTO>();
+            _return = new ArrayList<SubsetDTO>();
         }
         return this._return;
     }

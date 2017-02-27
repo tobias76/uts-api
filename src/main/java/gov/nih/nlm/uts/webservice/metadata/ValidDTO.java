@@ -35,18 +35,18 @@ import javax.xml.bind.annotation.XmlType;
     "expandedForm"
 })
 @XmlSeeAlso({
-    AdditionalRelationLabelDTO.class,
-    TermTypeDTO.class,
     RootSourceDTO.class,
-    LanguageDTO.class,
-    CharacterSetDTO.class,
-    GeneralMetadataEntryDTO.class,
-    IdentifierTypeDTO.class,
-    AttributeNameDTO.class,
+    SourceDTO.class,
     CooccurrenceTypeDTO.class,
-    SubheadingDTO.class,
+    CharacterSetDTO.class,
+    AttributeNameDTO.class,
     RelationLabelDTO.class,
-    SourceDTO.class
+    AdditionalRelationLabelDTO.class,
+    GeneralMetadataEntryDTO.class,
+    TermTypeDTO.class,
+    LanguageDTO.class,
+    SubheadingDTO.class,
+    IdentifierTypeDTO.class
 })
 public class ValidDTO {
 

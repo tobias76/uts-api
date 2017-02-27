@@ -3,22 +3,21 @@ package gov.nih.nlm.uts.webservice.content;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for dataDTO complex type.
+ * <p>Java class for getNewConceptsCount complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="dataDTO">
+ * &lt;complexType name="getNewConceptsCount">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="classType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="handle" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="ticket" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="version" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -28,66 +27,61 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "dataDTO", propOrder = {
-    "classType",
-    "handle"
+@XmlType(name = "getNewConceptsCount", propOrder = {
+    "ticket",
+    "version"
 })
-@XmlSeeAlso({
-    AtomCooccurrenceDTO.class,
-    ValueSetDefinitionDTO.class,
-    MetathesaurusDataDTO.class
-})
-public class DataDTO {
+public class GetNewConceptsCount {
 
-    protected String classType;
-    protected String handle;
+    protected String ticket;
+    protected String version;
 
     /**
-     * Gets the value of the classType property.
+     * Gets the value of the ticket property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getClassType() {
-        return classType;
+    public String getTicket() {
+        return ticket;
     }
 
     /**
-     * Sets the value of the classType property.
+     * Sets the value of the ticket property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setClassType(String value) {
-        this.classType = value;
+    public void setTicket(String value) {
+        this.ticket = value;
     }
 
     /**
-     * Gets the value of the handle property.
+     * Gets the value of the version property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getHandle() {
-        return handle;
+    public String getVersion() {
+        return version;
     }
 
     /**
-     * Sets the value of the handle property.
+     * Sets the value of the version property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setHandle(String value) {
-        this.handle = value;
+    public void setVersion(String value) {
+        this.version = value;
     }
 
 }
